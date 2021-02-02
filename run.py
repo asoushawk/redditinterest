@@ -28,33 +28,30 @@ for submission in reddit.subreddit(sub).hot(limit=50):
 #2- remove nome de usuários repetidos:
 
 
+
 fhandle = open("authors.txt", "r")
 fhandle2 = open("authors1.txt", "w")
 
 def remov_duplicates():
+   global s
    st = fhandle.read() 
    st = st.split(" ")
    for i in range(0, len(st)):
       st[i] = "".join(st[i])
       dupli = Counter(st)
       s = " ".join(dupli.keys())
-      fhandle2.write(s)
-      fhandle2.write(" ")
+      
      
 
 
    
 print ("removendo usuários duplicados...")      
 remov_duplicates()
-
+fhandle2.write(s)
+fhandle2.write(" ")
 fhandle.close()
 fhandle2.close()
 print("done")
-
-
-
-
-
 
 
 
