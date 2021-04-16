@@ -8,4 +8,4 @@ Ao achar os usuários ativos em um subreddit, e posteriormente por análise indi
 
 # Working version of the algorithm working on a Django based server: 
 
-http://danielmhl.pythonanywhere.com/redditinterest
+http://danielmhl.pythonanywhere.com/reddit
